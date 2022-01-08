@@ -1,5 +1,3 @@
 module.exports = function reverse (n) {
-   let array = n.split('');
-   array.reverse();
-   return array.join().replace(',','');
+   return Math.abs(n).toString().split('').reverse().join().toString().replace(/,/g, '')
 }
